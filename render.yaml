@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: verishnet-chat-api
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn backend:app
+    envVars:
+      - key: DEEPSEEK_API_KEY
+        value: sk-417dee1b97c448658cd95b0a7285aa66   # <-- Вставь свой API ключ
