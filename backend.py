@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-DEEPSEEK_API_KEY = os.environ.get("sk-417dee1b97c448658cd95b0a7285aa66")
+DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY")
 
 @app.route("/chat", methods=["POST"])
 def chat():
